@@ -1,6 +1,10 @@
 #include <iostream>
+#include "print.h"
+#include "change.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    printInBit(-3);
     return 0;
 }

@@ -123,6 +123,33 @@ lab_1/fast:
 	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/build
 .PHONY : lab_1/fast
 
+change.o: change.cpp.o
+
+.PHONY : change.o
+
+# target to build an object file
+change.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/change.cpp.o
+.PHONY : change.cpp.o
+
+change.i: change.cpp.i
+
+.PHONY : change.i
+
+# target to preprocess a source file
+change.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/change.cpp.i
+.PHONY : change.cpp.i
+
+change.s: change.cpp.s
+
+.PHONY : change.s
+
+# target to generate assembly for a file
+change.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/change.cpp.s
+.PHONY : change.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+print.o: print.cpp.o
+
+.PHONY : print.o
+
+# target to build an object file
+print.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/print.cpp.o
+.PHONY : print.cpp.o
+
+print.i: print.cpp.i
+
+.PHONY : print.i
+
+# target to preprocess a source file
+print.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/print.cpp.i
+.PHONY : print.cpp.i
+
+print.s: print.cpp.s
+
+.PHONY : print.s
+
+# target to generate assembly for a file
+print.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/print.cpp.s
+.PHONY : print.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab_1"
+	@echo "... change.o"
+	@echo "... change.i"
+	@echo "... change.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print.o"
+	@echo "... print.i"
+	@echo "... print.s"
 .PHONY : help
 
 

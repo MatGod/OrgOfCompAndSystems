@@ -84,7 +84,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/matgod/study/OrgOfCompAndSystems/lab_1/change.cpp">
+			<Option target="lab_1"/>
+		</Unit>
+		<Unit filename="/home/matgod/study/OrgOfCompAndSystems/lab_1/change.h">
+			<Option target="lab_1"/>
+		</Unit>
 		<Unit filename="/home/matgod/study/OrgOfCompAndSystems/lab_1/main.cpp">
+			<Option target="lab_1"/>
+		</Unit>
+		<Unit filename="/home/matgod/study/OrgOfCompAndSystems/lab_1/print.cpp">
+			<Option target="lab_1"/>
+		</Unit>
+		<Unit filename="/home/matgod/study/OrgOfCompAndSystems/lab_1/print.h">
 			<Option target="lab_1"/>
 		</Unit>
 		<Unit filename="/home/matgod/study/OrgOfCompAndSystems/lab_1/CMakeLists.txt">

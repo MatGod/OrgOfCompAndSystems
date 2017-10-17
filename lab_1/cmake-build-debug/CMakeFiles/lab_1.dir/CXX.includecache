@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/matgod/study/OrgOfCompAndSystems/lab_1/change.cpp
+cstdint
+-
+string
+-
+change.h
+/home/matgod/study/OrgOfCompAndSystems/lab_1/change.h
+
+/home/matgod/study/OrgOfCompAndSystems/lab_1/change.h
+
+/home/matgod/study/OrgOfCompAndSystems/lab_1/main.cpp
+iostream
+-
+print.h
+/home/matgod/study/OrgOfCompAndSystems/lab_1/print.h
+change.h
+/home/matgod/study/OrgOfCompAndSystems/lab_1/change.h
+
+/home/matgod/study/OrgOfCompAndSystems/lab_1/print.cpp
+cstdio
+-
+iostream
+-
+iomanip
+-
+print.h
+/home/matgod/study/OrgOfCompAndSystems/lab_1/print.h
+
+/home/matgod/study/OrgOfCompAndSystems/lab_1/print.h
+
