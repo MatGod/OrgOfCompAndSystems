@@ -1,4 +1,4 @@
-// Copyright (C) 2005  by Piotr He³ka (piotr.helka@nd.e-wro.pl)
+// Copyright (C) 2005  by Piotr Heï¿½ka (piotr.helka@nd.e-wro.pl)
 // Linux C++ (not full) implementation of Borland's conio.h 
 // v 1.01
 // It uses Ncurses lib, so accept also its terms.
@@ -21,7 +21,7 @@
 
 // ----------------------------- krotki opis ------------------
 
-// Biblioteka obs³uguje mniej lub bardziej zgodnie:
+// Biblioteka obsï¿½uguje mniej lub bardziej zgodnie:
 //
 // cgets()
 // cputs()
@@ -40,7 +40,7 @@
 // wherey()
 // window()
 //
-// kompatbyilno¶æ w kierunku Linux CONIO.H -> DOS CONIO.H
+// kompatbyilnoï¿½ï¿½ w kierunku Linux CONIO.H -> DOS CONIO.H
 // bedzie zachowana
 
 // Aby skompilowac
@@ -66,14 +66,14 @@
 #define MAGENTA     5
 #define CYAN        6
 #define LIGHTGRAY   7
-#define DARKGRAY    0
-#define LIGHTRED    1
-#define LIGHTGREEN  2
-#define YELLOW      3
-#define LIGHTBLUE   4
-#define PINK        5
-#define LIGHTCYAN   6
-#define WHITE       7
+#define DARKGRAY    8
+#define LIGHTRED    9
+#define LIGHTGREEN  10
+#define YELLOW      11
+#define LIGHTBLUE   12
+#define PINK        13
+#define LIGHTCYAN   14
+#define WHITE       15
 
 // -------------------------------- globalne ------------------
 

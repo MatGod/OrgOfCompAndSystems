@@ -179,12 +179,6 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
 //Value Computed by CMake
-lab_1_BINARY_DIR:STATIC=/home/matgod/study/OrgOfCompAndSystems/lab_2/cmake-build-debug
-
-//Value Computed by CMake
-lab_1_SOURCE_DIR:STATIC=/home/matgod/study/OrgOfCompAndSystems/lab_2
-
-//Value Computed by CMake
 lab_2_BINARY_DIR:STATIC=/home/matgod/study/OrgOfCompAndSystems/lab_2/cmake-build-debug
 
 //Value Computed by CMake
