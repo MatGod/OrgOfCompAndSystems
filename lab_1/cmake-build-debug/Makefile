@@ -123,6 +123,33 @@ lab_1/fast:
 	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/build
 .PHONY : lab_1/fast
 
+change.o: change.cpp.o
+
+.PHONY : change.o
+
+# target to build an object file
+change.cpp.o:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/change.cpp.o
+.PHONY : change.cpp.o
+
+change.i: change.cpp.i
+
+.PHONY : change.i
+
+# target to preprocess a source file
+change.cpp.i:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/change.cpp.i
+.PHONY : change.cpp.i
+
+change.s: change.cpp.s
+
+.PHONY : change.s
+
+# target to generate assembly for a file
+change.cpp.s:
+	$(MAKE) -f CMakeFiles/lab_1.dir/build.make CMakeFiles/lab_1.dir/change.cpp.s
+.PHONY : change.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lab_1"
+	@echo "... change.o"
+	@echo "... change.i"
+	@echo "... change.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
