@@ -6,8 +6,4 @@ CMakeFiles/lab_1.dir/change.cpp.o: ../change.h
 
 CMakeFiles/lab_1.dir/main.cpp.o: ../change.h
 CMakeFiles/lab_1.dir/main.cpp.o: ../main.cpp
-CMakeFiles/lab_1.dir/main.cpp.o: ../print.h
-
-CMakeFiles/lab_1.dir/print.cpp.o: ../print.cpp
-CMakeFiles/lab_1.dir/print.cpp.o: ../print.h
 

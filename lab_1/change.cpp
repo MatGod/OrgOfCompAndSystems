@@ -4,31 +4,69 @@
 
 #include <cstdint>
 #include <string>
+#include <iostream>
+#include <cmath>
 #include "change.h"
 
 using namespace std;
 
-string intToString(int num) {
+void printInBit(int num) {
     string result;
     int bitCount = sizeof(num) * 8;
     for(int i = 0; i < bitCount; i++) {
-        result += ((num & 0x80000000) >> 31) + '0';
+        cout << ((num & 0x80000000) >> 31);
         num <<= 1;
     }
-    return result;
 }
 
-string change(string str, unsigned long first_position,
-              unsigned long second_position, unsigned long count_of_bits) {
-    string start = "", end = "";
-    if (first_position != 0) {
-        start = str.substr(0, first_position - 1);
+void printInBit(long double x) {
+    union {
+        long double lDoubleCount;
+        int IntCount[4];
+    } lDoubleNum;
+    lDoubleNum.lDoubleCount = x;
+    for (int i = 3; i >= 0; i--) {
+        printInBit(lDoubleNum.IntCount[i]);
     }
-    if ((second_position + count_of_bits) < 32) {
-        end = str.substr(second_position + count_of_bits + 1);
+}
+
+int reversGroup(int x, unsigned int start_position, unsigned int count_of_bits) {
+    if (start_position < 0 || start_position + count_of_bits > 31) {
+        cout << "Ошибка. Выход за пределы числа. Операция прервана.\n";
+        return x;
+    } else {
+        unsigned int zeros = UINT32_MAX;
+        int int_bit_count = sizeof(int) * 8;
+        for (int i = 0; i < count_of_bits; i++) {
+            zeros -= pow(2, int_bit_count - start_position - i - 1);
+        }
+        int ones = ~zeros;
+        return ((x & zeros) | (~x & ones));
     }
-    string first_group = str.substr(first_position, count_of_bits),
-    mid = str.substr(first_position + count_of_bits, second_position - first_position - count_of_bits),
-    second_group = str.substr(second_position, count_of_bits);
-    return start + second_group + mid + first_group + end;
+}
+
+long double reversGroup(long double x, unsigned int start_position, unsigned int count_of_bits) {
+    if (start_position < 0 || start_position + count_of_bits > 127) {
+        cout << "Ошибка. Выход за пределы числа. Операция прервана.\n";
+        return x;
+    } else {
+        union {
+            long double lDoubleCount;
+            unsigned IntCount[4];
+        } lDoubleNum;
+        lDoubleNum.lDoubleCount = x;
+        unsigned int zeros[4] = {UINT32_MAX, UINT32_MAX, UINT32_MAX, UINT32_MAX};
+        //int int_bit_count = sizeof(int) * 8;
+        int zer_num, pow_step;
+        for (int i = 0; i < count_of_bits; i++) {
+            zer_num = (start_position + i) / 33;
+            pow_step = 32 - ((start_position + i) % 33);
+            zeros[zer_num] -= pow(2, pow_step);
+        }
+        int ones[4] = {~zeros[0], ~zeros[1], ~zeros[2], ~zeros[3]};
+        for (int i  = 0; i < 4; i++) {
+            lDoubleNum.IntCount[3 - i] = (lDoubleNum.IntCount[3 - i] & zeros[i]) | (~lDoubleNum.IntCount[3 - i] & ones[i]);
+        }
+        return lDoubleNum.lDoubleCount;
+    }
 }

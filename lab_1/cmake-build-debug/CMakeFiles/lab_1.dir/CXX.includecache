@@ -11,6 +11,10 @@ cstdint
 -
 string
 -
+iostream
+-
+cmath
+-
 change.h
 /home/matgod/study/OrgOfCompAndSystems/lab_1/change.h
 
@@ -19,20 +23,6 @@ change.h
 /home/matgod/study/OrgOfCompAndSystems/lab_1/main.cpp
 iostream
 -
-print.h
-/home/matgod/study/OrgOfCompAndSystems/lab_1/print.h
 change.h
 /home/matgod/study/OrgOfCompAndSystems/lab_1/change.h
-
-/home/matgod/study/OrgOfCompAndSystems/lab_1/print.cpp
-cstdio
--
-iostream
--
-iomanip
--
-print.h
-/home/matgod/study/OrgOfCompAndSystems/lab_1/print.h
-
-/home/matgod/study/OrgOfCompAndSystems/lab_1/print.h
 
