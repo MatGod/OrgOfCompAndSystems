@@ -31,15 +31,15 @@ int lab2() {
     char* colors[8] = {"BLACK", "RED", "GREEN", "YELLOW",
                                         "BLUE", "LILAC", "LIGHTBLUE", "WHITE"};
     textbackground(0);
-    window(10, 8, 70, 18);
+    window(25, 12, 55, 23);
     std::string background_name, font_name;
     while (true) {
         for (int i = 0; i < 8; ++i) {
             textbackground(i);
             for (int j = 0; j < 8; ++j) {
                 textcolor(j);
-                cprintf("Background: %s, text: %s\n\n\n", colors[i], colors[j]);
-                msleep(700);
+                cprintf("Background: %s, text: %s\n\n", colors[i], colors[j]);
+                msleep(600);
             }
         }
     }
